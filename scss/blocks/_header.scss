@@ -1,0 +1,119 @@
+.header {
+  @include flex;
+  justify-content: space-between;
+  padding: 40px 0;
+
+  &__logo-img {
+    width: 177px;
+    height: 50px;
+  }
+
+  &__categories {
+    @include flex;
+    width: 500px;
+    height: 42px;
+    background: $color-bg;
+    border: 1px solid #d1d1d1;
+    border-radius: 12px;
+    
+  }
+
+  &__category {
+    border: none;
+    background-color: transparent;
+    color: $text-color;
+    padding: 5px 16px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    
+  }
+
+  &__form {
+    margin-left: 28px;
+    padding-left: 20px;
+
+    position: relative;
+    border-left: 1px solid #d1d1d1;
+  }
+
+  &__inp {
+    height: 100%;
+    border: none;
+    outline-color: #d1d1d1;
+    background-color: transparent;
+    padding: 5px 10px;
+  }
+
+  &__label {
+    margin-left: 30px;
+  }
+  &__search {
+    display: none;
+  }
+  &__search-btn {
+    font-size: 25px;
+    color: $text-color;
+    margin-right: 10px
+  }
+  &__wrapper {
+    @include flex;
+  }
+  &__list {
+    @include flex;
+    @include list-unstyled;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  &__link {
+    font-size: 24px;
+    color: $text-color;
+  }
+  &__menu  {
+    display: none;
+    z-index: 100;
+
+  }
+  &__menu-btn {
+    border: none;
+    font-size: 30px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .header__categories {
+    width: 470px;
+  }
+  .header__label {
+    margin: 0;
+  }
+}
+@media screen and (max-width:800px) {
+  .header__categories {
+    display: none;
+  }
+  .header__search {
+    display: block;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+  .header__search-btn {
+    margin-left: auto;
+    
+  }
+}
+@media screen and (max-width:630px) {
+  .header__item:not(:last-child) {
+    margin-right: 15px;
+  }
+  .header__search {
+    margin-right: 10px;
+  }
+  .header__menu {
+    display: block;
+  }
+}
