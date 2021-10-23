@@ -40,3 +40,19 @@
     right: 10px;
   }
 }
+.product-btn {
+  background: $color-primary;
+  border: 2px solid #46760A;
+  color: $color-white;
+  border-radius: 12px;
+  padding: 7px 12px;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}

@@ -446,6 +446,25 @@ img {
   right: 10px;
 }
 
+.product-btn {
+  background: #6A983C;
+  border: 2px solid #46760A;
+  color: #fff;
+  border-radius: 12px;
+  padding: 7px 12px;
+  text-decoration: none;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.product-btn:hover {
+  opacity: 0.8;
+}
+
+.product-btn:active {
+  opacity: 0.6;
+}
+
 .contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1012,6 +1031,161 @@ img {
   }
   .banner__btn {
     margin-left: 0;
+  }
+}
+
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product {
+  width: 100%;
+  height: 323px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 15px;
+  border: 1px solid #d1d1d1;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.product:nth-child(2)::after {
+  content: "-36%";
+  display: block;
+  color: #6A983C;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.product:nth-child(3)::after {
+  content: "-36%";
+  display: block;
+  color: #6A983C;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.product::before {
+  content: "";
+  background-image: url("https://media.istockphoto.com/photos/arabic-and-middle-eastern-dinner-table-hummus-tabbouleh-salad-salad-picture-id1175505781?k=20&m=1175505781&s=612x612&w=0&h=STomby2lCtcvpl_hxK6RhknQQWrkvpkHcoDLD4zttFk=");
+  background-repeat: no-repeat;
+  width: 93%;
+  height: 180px;
+  background-size: cover;
+  border-radius: 12px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.product:first-child::before {
+  background-image: url("https://www.washingtonian.com/wp-content/uploads/2021/07/2Fiftys-1500x1000.jpg");
+}
+
+.product:last-child::before {
+  background-image: url("https://media-cdn.tripadvisor.com/media/photo-s/11/de/d3/3d/easy-food.jpg");
+}
+
+.product__title {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+  padding-top: 177px;
+}
+
+.product__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #575757;
+}
+
+.product__selling {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product__sale {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #A9A9A9;
+}
+
+.product__prise {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+  margin: 0;
+}
+
+.product:hover::before {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
+}
+
+/*----PRODUCT RESPONSIVE--- */
+@media screen and (max-width: 767px) {
+  .products {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .product {
+    margin: 0 0 20px 0;
+  }
+  .product::before {
+    width: 97%;
+  }
+  .product:hover::before {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .product::before {
+    width: 96%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .product::before {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .product::before {
+    width: 94%;
   }
 }
 
