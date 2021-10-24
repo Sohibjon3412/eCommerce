@@ -94,9 +94,17 @@
   transform: scale(1.2);
   cursor: pointer;
 }
-
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
 
 /*----PRODUCT RESPONSIVE--- */
+@media screen and (max-width:1024px) {
+  .product__hidden {
+    display: none;
+  }
+}
 
 @media screen and (max-width:767px ) {
   .products {
@@ -108,6 +116,9 @@
     &::before {
       width: 97%;
     }
+  }
+  .product__hidden {
+    display: block;
   }
   .product:hover::before {
     transform: scale(1);
