@@ -5,14 +5,17 @@
 .product {
   width: 100%;
   height: 323px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
   padding: 15px;
   border: 1px solid #d1d1d1;
   border-radius: 12px;
   overflow: hidden;
   position: relative;
 
+  &:last-child {
+    margin-right: 0;
+  }
   &:nth-child(2)::after {
     content: "-36%";
     display: block;
