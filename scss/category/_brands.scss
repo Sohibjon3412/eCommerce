@@ -1,0 +1,7 @@
+.brands {
+  @include list-unstyled;
+
+  &__item:not(:last-child){
+      margin-bottom: 12px;
+  }
+}

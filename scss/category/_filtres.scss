@@ -1,0 +1,144 @@
+.filtres {
+  @include list-unstyled;
+  margin-bottom: 16px;
+
+  &__item:not(:last-child){
+      margin-right: 16px !important;
+  }
+
+  &__item{
+      padding: 10px 16px;
+      background: #f9f9f9;
+      border: 1px solid #d1d1d1;
+      border-radius: 12px;
+  }
+
+  &__label{
+      font-family: $font-opensans;
+      font-size: 14px;
+      line-height: 19px;
+      color: $text-color;
+  }
+
+  &__inp--radio {
+      display:none;
+
+      &:checked + .filtres__label::after{
+         border-color: #000;
+      }
+  }
+  
+  &__block:not(:last-child){
+      margin-right: 16px;
+  }
+
+  &__label--radio{
+      padding-left: 30px;
+      position: relative;
+
+      &::before{
+          content: "";
+          position:absolute;
+          left: 0;
+          top: 50%;
+          transform: translate(0,-50%);
+          width: 20px;
+          height: 20px;
+          border: 1.5px solid #d1d1d1;
+          border-radius: 50%;
+      }
+
+      &::after{
+          content: "";
+          position:absolute;
+          left: 0;
+          top: 50%;
+          transform: translate(0,-50%);
+          width: 20px;
+          height: 20px;
+          border: 6px solid transparent;
+          border-radius: 50%;
+      }
+  }
+
+  &__inp--label{
+      padding-left: 30px;
+      position: relative;
+
+      &::before{
+          content: "";
+          position:absolute;
+          left: 0;
+          top: 50%;
+          transform: translate(0,-50%);
+          width: 20px;
+          height: 20px;
+          border: 2px solid #d1d1d1;
+          border-radius: 5px;
+      }
+
+      &::after{
+          content: "";
+          position:absolute;
+          left: 0;
+          top: 50%;
+          transform: translate(0,-50%);
+          width: 20px;
+          height: 20px;
+          background: transparent;
+          background-repeat: no-repeat;
+          border-radius: 5px;
+          opacity: 0.8;
+      }
+  }
+
+  &__inp--check{
+      display: none;
+
+      &:checked + .filtres__inp--label::after{
+          background: $color-primary;
+          background-image: url("../../media/img/check.svg");
+          background-repeat: no-repeat;
+          background-position:center center;
+      }
+  }
+
+  
+  &__span {
+      display: inline-block;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 18px;
+      color: $text-color;
+      border: 1px solid #ebebeb;
+      border-radius: 12px;
+      padding: 0 8px;
+      margin-left: 8px;
+  }
+
+  &__select {
+      background: transparent;
+      border: none;
+  }
+
+  &__line{
+      display: inline-block;
+      width: 1px;
+      height: 20px;
+      background: #d1d1d1;
+      margin: 0 24px;
+  }
+}
+
+@media screen and (max-width:992px){
+  .filtres__item{
+      margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width:576px){
+
+  .filtres__item:not(:last-child){
+      margin-right: 0 !important;
+  }
+}

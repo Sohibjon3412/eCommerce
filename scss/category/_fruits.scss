@@ -1,0 +1,152 @@
+.fruits {
+  padding: 16px 0;
+
+  &__desc {
+    font-family: $font-opensans;
+    margin: 0 0 16px 0;
+    font-size: 12px;
+    line-height: 16px;
+    color: $text-color;
+  }
+
+  &__desc span{
+    color: #a9a9a9;
+  }
+
+  &__row {
+    padding: 8px 0;
+    margin-bottom: 25px;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color: $text-color;
+  }
+
+  &__list {
+    @include list-unstyled()
+  }
+
+  &__item:not(:last-child){
+    margin-right: 24px;
+    position: relative;
+  }
+
+  &__btn {
+    font-family: $font-opensans;
+    background: none;
+    border: none;
+    font-size: 12px;
+    line-height: 16px;
+    color: $text-color;
+    padding-left: 20px;
+    cursor: pointer;
+
+    &::before{
+        content: "";
+        position:absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(0,-50%);
+        width: 16px;
+        height: 16px;
+        background-size: 16px 16px;
+        background-repeat: no-repeat;
+        background-image: url("../../media/img/grid-icon.svg");
+    }
+  }
+
+  .fruits__btn--list::before{
+      background-image: url("../../media/img/list-icon.svg");
+  }
+
+    &__prodcts {
+        display: inline-block;
+        font-family: $font-opensans;
+        font-size: 12px;
+        line-height: 16px;
+        color: #a9a9a9;
+    }
+
+    &__count {
+        line-height: 18px;
+        color: $text-color;
+        background: #f4f8ec;
+        padding: 0 8px;
+        margin-right: 5px;
+        border-radius: 12px;
+        font-family: $font-poppins;
+    }
+
+    &__applied-filtr{
+        margin: 0;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: #a9a9a9;
+    }
+
+    &__applied-filtr .applid-filter{
+        color: $color-primary;
+        padding: 0 23px 0 8px;
+        margin-left: 12px;
+        position: relative;
+        background: #f4f8ec;
+        border-radius: 12px;
+        cursor: pointer;
+
+        &::before{
+            content: "";
+            position:absolute;
+            top: 50%;
+            transform: translate(0,-50%);
+            right: 8px;
+            width: 12px;
+            height: 12px;
+            background-image: url("../../media/img/x-tage.svg");
+            background-size: 12px 12px;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+
+@media screen and (max-width:576px){
+  .fruits__filtres{
+    flex-direction: column;
+  }
+  .fruits__title{
+    font-size: 27px;
+    line-height: 30px;
+  }
+  .fruits__item:not(:last-child){
+    margin-right: 10px;
+  }
+  .fruits__applied-filtr{
+    flex-direction: column;
+  }
+  .applid-filter{
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width:350px){
+  .fruits__title{
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+
+
+@media screen and (max-width:768px){
+  .fruits__row{
+    flex-direction: column;
+  }
+  .fruits__title{
+    margin-bottom: 20px;
+  }
+}

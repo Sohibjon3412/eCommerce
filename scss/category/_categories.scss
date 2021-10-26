@@ -1,0 +1,52 @@
+.categories {
+  padding: 64px 0;
+
+  &__list {
+      @include list-unstyled;
+      padding-left: 30px;
+  }
+
+  &__list--small{
+      display: none;
+  }
+  .show-list-small{
+      display: block;
+  }
+  .remove__list--big{
+      display: none;
+  }
+  &__list--small li{
+      margin-bottom: 48px;
+  }
+  
+  &__item{
+      margin-bottom: 48px;
+  }
+
+  &__title {
+      margin: 0 0 16px 0;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 27px;
+      color: $text-color;
+  }
+
+}
+
+@media screen and (max-width:1070px){
+  .categories li .price__btn{
+      padding: 0 4px;
+  }
+}
+
+@media screen and (max-width:992px){
+  .categories li .price__btn{
+      padding: 6px 12px;
+  }
+}
+
+@media screen and (max-width:576px){
+  .categories__list{
+      padding: 0;
+  }
+}

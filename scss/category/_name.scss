@@ -1,0 +1,27 @@
+.name {
+
+  @include list-unstyled;
+
+  &__item:not(:last-child){
+      margin-bottom: 12px;
+  }
+
+  &__link {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 14px;
+      line-height: 19px;
+      color: $text-color;
+  }
+
+  &__count {
+      display: inline-block;
+      background: #f4f8ec;
+      border-radius: 12px;
+      color: $color-primary;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 18px;
+      padding: 0 8px;
+  }
+}

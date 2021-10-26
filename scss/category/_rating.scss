@@ -1,0 +1,15 @@
+.rating {
+  @include list-unstyled;
+  &__item:not(:last-child){
+    margin-bottom: 16px;
+  }
+}
+.bx {
+  font-size: 15px;
+}
+.rating .bxs-star {
+  color: #fdbc15;
+}
+.rating .bx-star {
+  color: #d1d1d1;
+}
