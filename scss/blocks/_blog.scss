@@ -59,6 +59,7 @@
       position: absolute;
       top: 24px;
       left: 24px;
+      z-index: 2;
     }
   }
 
@@ -70,11 +71,14 @@
     padding-top: 220px;
     padding-left: 24px;
     z-index: 1212;
+    position: relative;
   }
 
   &__description {
     align-items: center;
     padding-left: 27px;
+    z-index: 2;
+    position: relative;
   }
 
   &__author-img {
