@@ -31,6 +31,7 @@
     padding-left: 32px;
     margin: 0;
     z-index: 2;
+    position: relative;
   }
 
   &__subtitle {
@@ -42,6 +43,7 @@
     margin-top: 12px;
     margin-bottom: 94px;
     z-index: 2;
+    position: relative;
   }
 
   &__btn {
