@@ -1,0 +1,129 @@
+.info {
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+
+  &__tags-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: $text-color;
+  }
+
+  &__tags-list {
+    @include list-unstyled;
+    @include flex;
+    flex-flow: row wrap;
+    margin-left: -8px;
+    margin-bottom: 57px;
+  }
+
+  &__tags-item {
+    margin: 8px;
+  }
+
+  &__tags-link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #6A983C;
+    padding: 4px 10px;
+    background-color: $color-bg;
+    border-radius: 12px;
+    text-decoration: none;
+  }
+
+  &__tags-back {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    color: $text-color;
+    position: relative;
+    text-decoration: none;
+    padding-left: 25px;
+
+    &::before {
+      content: "";
+      background-image: url("../../media/img/tag-left-icon.svg");
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      top: 2px;
+      left: 0;
+    }
+  }
+}
+.texts {
+  padding-left: 32px;
+
+  &__text {
+    max-width: 569px;
+    font-family: $font-opensans;
+    font-size: 17px;
+    line-height: 23px;
+    color: $text-color;
+    margin-bottom: 48px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: $text-color;
+  }
+
+  &__list {
+    @include flex;
+    @include list-unstyled;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  &__list-text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: $text-color;
+
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: $text-color;
+    padding: 6px 12px;
+    text-decoration: none;
+    background-color: $color-bg;
+    @include flex;
+    border-radius: 12px;
+
+  }
+  &__link .bx {
+    margin-right: 5px;
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width:1023px) {
+  .info__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .info__texts {
+    padding-left: 10px;
+  }
+  .texts__list {
+    flex-flow: row wrap;
+  }
+  .texts__item {
+    margin-bottom: 16px;
+  }
+}

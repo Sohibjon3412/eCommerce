@@ -1,0 +1,92 @@
+.comments {
+  padding: 48px 0;
+  
+  &__title {
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 33px;
+      color: $text-color;
+      margin:  0 0 16px 0;
+  }
+
+  &__box {
+      max-width: 570px;
+      background: #fff;
+      border: 1px solid #d1d1d1;
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 24px;
+
+      &:last-child{
+          max-width: 470px;
+          margin-bottom: 0;
+          margin-left: 100px;
+      }
+  }
+
+  &__box:last-child &__spam{
+      background: #f5f5f5;
+      color:$color-primary;
+  }
+
+  &__user {
+      padding-left: 50px;
+      position: relative;
+      margin-bottom: 24px;
+
+      &::before{
+          content: "";
+          width: 40px;
+          height: 40px;
+          position:absolute;
+          left: 0;
+          top: 50%;
+          transform: translate(0,-50%);
+          background-repeat: no-repeat;
+          background-size: 40px 40px;
+          background-image: url("../../media/img/admin-img.png");
+      }
+  }
+
+  &__name{
+      margin: 0 6px 0 0;
+      font-size: 12px;
+      line-height: 18px;
+      color: $text-color;
+  }
+
+  &__spam {
+      padding: 0 8px;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 18px;
+      color: $color-primary;
+      background: #f4f8ec;
+      border-radius: 12px;
+  }
+
+  &__time {
+      font-family:$font-opensans;
+      font-size: 12px;
+      line-height: 16px;
+      color: #d1d1d1;
+  }
+
+  &__desc {
+      font-family:$font-opensans;
+      margin: 0;
+      font-size: 14px;
+      line-height: 19px;
+      color: $text-color;
+  }
+}
+.user-customer::before {
+  background-image: url("../../media/img/customer-leave.png");
+}
+
+@media screen and (max-width:576px){
+  .comments__box:last-child{
+      margin-left: 0;
+      max-width: 100%;
+  }
+}

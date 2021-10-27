@@ -1,0 +1,118 @@
+.row {
+  margin: 0;
+  padding: 0;
+}
+.leave {
+  padding: 48px 0;
+
+  &__title {
+      margin: 0 0 12px 0;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 33px;
+      color: $text-color;
+  }
+
+  &__desc {
+      font-family: $font-opensans;
+      margin: 0 0 16px 0; 
+      font-size: 17px;
+      line-height: 23px;
+      color: $text-color;
+  }
+
+  &__sing-in {
+      color: $text-color;
+  }
+
+  &__form {
+      display: flex;
+      flex-direction: column;
+  }
+
+  &__inputs-box {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 32px;
+
+      &:not(:last-child){
+          margin-right: 32px;
+      }
+  }
+
+  &__inputs-user{
+      width: 34%;
+  }
+
+  &__inputs--save-comment{
+      max-width: 500px;
+      margin-right: 0 !important;
+      background: #f9f9f9;
+      border: 1px solid #d1d1d1;
+      border-radius: 12px;
+      padding: 10px 16px;
+  }
+
+  &__label {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 18px;
+      color: $text-color;
+  }
+
+  &__input{
+      background: #f9f9f9;
+      border: 1px solid #d1d1d1;
+      border-radius: 12px;
+      padding: 12px 16px 12px 21px;
+      outline-color: $color-primary;
+
+      &::placeholder{
+          font-family:$font-opensans;
+          font-size: 14px;
+          line-height: 19px;
+          color: #a9a9a9;
+      }
+  }
+
+  &__textarea {
+      padding: 12px 16px 12px 21px;
+      max-width: 570px;
+      height: 110px;
+      background: #f9f9f9;
+      border: 1px solid #d1d1d1;
+      border-radius: 12px;
+      outline-color: $color-primary;
+
+      &::placeholder{
+          font-family:$font-opensans;
+          font-size: 14px;
+          line-height: 19px;
+          color: #a9a9a9;
+      }
+  }
+
+  &__btn {
+      max-width: 230px;
+      border-radius: 12px;
+      border: 2px solid #46760a;
+      color: #fff;
+      background: $color-primary;
+  }
+}
+
+@media screen and(max-width:850px){
+  .leave__main-row{
+      padding-left: 0;
+  }
+}
+
+@media screen and(max-width:576px){
+  .leave__row{
+      flex-direction: column;
+  }
+  
+  .leave__inputs-user{
+      width: 100%;
+  }
+}
