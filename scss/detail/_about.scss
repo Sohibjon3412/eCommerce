@@ -1,0 +1,101 @@
+.about {
+  padding-left: 15px;
+  &__subtitles {
+    @include flex;
+    margin-top: 30px;
+  }
+
+  &__subtitle {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    color: $text-color;
+    margin-right: 28px;
+    padding-left: 34px;
+    position: relative;
+
+    &::before {
+      content: "";
+      background-image: url("../../media/img/heart-icon.svg");
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      top: 2px;
+      left: 7px;
+    }
+
+    &:nth-child(2)::before {
+      background-image: url("../../media/img/compare-icon.svg");
+    }
+  }
+
+  &__title-list {
+    @include list-unstyled;
+    display: flex;
+    margin-top: 60px;
+  }
+
+  &__title-item {
+    width: 168px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid $color-bg;
+
+  }
+  &__title-item:first-child {
+    border-bottom: 1px solid #6A983C;
+  }
+  &__title-item:not(:first-child) {
+    text-align: center;
+  }
+
+  &__title-link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: $text-color;
+    text-decoration: none;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: $text-color;
+    margin-top: 32px;
+  }
+
+  &__text {
+    font-family: $font-opensans;
+    font-size: 14px;
+    line-height: 19px;
+    color: $text-color;
+  }
+
+  &__table {
+    display: flex;
+    
+  }
+
+  &__list {
+    @include list-unstyled;
+    margin-right: 120px;
+  }
+
+  &__item {
+    height: 40px;
+  }
+
+  &__table-title {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: $text-color;
+  }
+
+  &__table-text {
+    font-family: $font-opensans;
+    font-size: 14px;
+    line-height: 19px;
+    color: #575757;
+  }
+}
