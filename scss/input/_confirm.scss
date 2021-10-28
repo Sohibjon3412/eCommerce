@@ -1,0 +1,60 @@
+.confirm {
+
+  &__des {
+    background: $color-bg;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+    padding: 10px 15px;
+    margin-bottom: 16px;
+    width: auto;
+    @include flex;
+  }
+
+  &__inp {
+    margin-right: 10px;
+  }
+
+  &__label {
+    font-family: $font-opensans;
+    font-size: 14px;
+    line-height: 19px;
+    color: $text-color;
+  }
+
+  &__link {
+    color: $text-color; 
+  }
+
+  &__btn {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    color: $color-white;
+    padding: 16px 48px;
+    background-color: $color-primary;
+    border: none;
+    border: 2px solid #46760A;
+    border-radius: 12px;
+    margin-top: 32px;
+  }
+
+  &__wrap {
+    width: 213px;
+    height: 113px;
+    margin-top: 32px;
+  }
+
+  &__wrap-title {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: $text-color;
+  }
+
+  &__text {
+    font-family: $font-opensans;
+    font-size: 12px;
+    line-height: 16px;
+    color: #A9A9A9;
+  }
+}

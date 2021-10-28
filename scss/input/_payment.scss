@@ -1,0 +1,87 @@
+.payment {
+
+  &__card {
+    width: 100%;
+    border: 1px solid #D1D1D1;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+
+  &__des {
+    @include flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    padding-left: 46px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: $text-color;
+    position: relative;
+    margin-bottom: 32px;
+
+    &::before {
+      content: "";
+      background-image: url("../../media/img/payment-befor.svg");
+      background-repeat: no-repeat;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: -4px;
+      left: 0;
+    }
+  }
+
+  &__label {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: $text-color;
+  }
+
+  &__inp {
+    background: $color-bg;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+    padding: 11px 15px;
+    outline-color: $color-primary;
+  }
+
+  &__user {
+    @include flex;
+    margin-top: 32px;
+  }
+
+  &__holder {
+    width: 350px;
+    margin-right: 32px;
+  }
+
+  &__date {
+    width: 120px;  
+    margin-right: 16px;
+  }
+
+  &__date-inp {
+    width: 120px;
+    margin-right: 16px;
+  }
+
+  &__cvc {
+    width: 120px;
+    
+  }
+
+  &__cvc-inp {
+    width: 120px;
+  }
+}
+.payment-card {
+  width: 100%;
+}
+.payment-holder {
+  width: 350px;
+}

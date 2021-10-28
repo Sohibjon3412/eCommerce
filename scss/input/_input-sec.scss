@@ -1,0 +1,102 @@
+.shipping {
+  display: flex;
+}
+.input-sec {
+
+
+  &__title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: $text-color;
+
+  }
+
+  &__text {
+    font-family: $font-opensans;
+    font-size: 12px;
+    line-height: 16px;
+    color: #A9A9A9;
+  }
+  &__step {
+    font-family: $font-opensans;
+    text-align: right;
+    font-size: 12px;
+    line-height: 16px;
+    color: #A9A9A9;
+
+  }
+  &__description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 64px;
+  }
+
+  
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  &__des {
+    display: flex;
+    flex-direction: column;
+
+    &:nth-child(odd) {
+      margin-right: 20px;
+    }
+  }
+
+  &__label {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: $text-color;
+  }
+
+  &__inp {
+    width: 319px;
+    height: 42px;
+    border: 1px solid #D1D1D1;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background-color: $color-bg;
+    margin-bottom: 32px;
+    padding: 10px 20px;
+    outline-color: $color-primary;
+  }
+
+  &__checkbox {
+    width: 273px;
+    height: 42px;
+    background-color: $color-bg;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    @include flex;
+  }
+
+  &__check {
+    width: 20px;
+    height: 20px;
+
+  }
+
+  &__check-label {
+    font-family: $font-opensans;
+    font-size: 14px;
+    line-height: 19px;
+    color: $text-color;
+    margin-left: 10px;
+  }
+}
+
+// @media screen and (max-width: 1190px) {
+//   .shipping {
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//   }
+// }

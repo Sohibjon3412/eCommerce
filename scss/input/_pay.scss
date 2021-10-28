@@ -1,0 +1,47 @@
+.pay {
+
+
+  &__wrap {
+    max-width: 670px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color-bg;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #D1D1D1;
+  }
+
+  &__inp {
+    margin: 0 16px;
+    font-size: 26px;
+  }
+  &__input {
+    @include flex;
+  }
+  &__texts {
+    @include flex;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: $text-color;
+    
+    
+  }
+
+  &__des {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #6A983C;
+    margin-right: 10px;
+  }
+
+  &__img {
+    padding-right: 16px;
+  }
+}
