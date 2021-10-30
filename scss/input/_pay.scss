@@ -14,6 +14,8 @@
   }
 
   &__inp {
+    width: 17px;
+    height: 17px;
     margin: 0 16px;
     font-size: 26px;
   }
@@ -29,8 +31,6 @@
     font-size: 12px;
     line-height: 18px;
     color: $text-color;
-    
-    
   }
 
   &__des {

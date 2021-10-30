@@ -370,7 +370,6 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
   font-family: "Poppins", sans-serif;
   background-color: #fff;
 }
@@ -4377,6 +4376,10 @@ img {
   color: #A9A9A9;
 }
 
+.input-sec__form {
+  width: 100%;
+}
+
 .input-sec__description {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4394,10 +4397,16 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.input-sec__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .input-sec__des {
@@ -4451,8 +4460,8 @@ img {
 }
 
 .input-sec__check {
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  height: 17px;
 }
 
 .input-sec__check-label {
@@ -4461,6 +4470,71 @@ img {
   line-height: 19px;
   color: #151515;
   margin-left: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 90% !important;
+  }
+  .shipping {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .confirm__btn {
+    width: 100%;
+    text-align: center;
+  }
+  .confirm__wrap {
+    margin: 32px auto 70px auto;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .input-sec__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .input-sec__des:nth-child(odd) {
+    margin-right: 0;
+  }
+  .input-sec__inp {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .order__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .order__about {
+    margin-left: 0px !important;
+  }
+  .order__button {
+    width: 100px;
+  }
+  .order {
+    height: auto !important;
+  }
+  .order__inp {
+    width: 185px !important;
+  }
+  .order__total-price {
+    font-size: 17px !important;
+  }
 }
 
 .pay__wrap {
@@ -4482,6 +4556,8 @@ img {
 }
 
 .pay__inp {
+  width: 17px;
+  height: 17px;
   margin: 0 16px;
   font-size: 26px;
 }
@@ -4622,6 +4698,31 @@ img {
   width: 350px;
 }
 
+@media screen and (max-width: 700px) {
+  .payment__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .payment__date {
+    margin-bottom: 30px;
+  }
+  .payment-holder {
+    width: 80%;
+  }
+  .payment__holder {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  .txt {
+    display: none;
+  }
+}
+
 .message__label {
   font-weight: 600;
   font-size: 12px;
@@ -4655,6 +4756,8 @@ img {
 }
 
 .confirm__inp {
+  width: 17px;
+  height: 17px;
   margin-right: 10px;
 }
 
@@ -4984,5 +5087,11 @@ img {
   line-height: 39px;
   text-align: right;
   color: #6A983C;
+}
+
+@media screen and (max-width: 450px) {
+  .order__total-price {
+    font-size: 13px !important;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -282,45 +282,53 @@
     <section class="shipping-sec">
       <div class="shipping-sec__container container">
         <div class="shipping-sec__shipping shipping">
-          <div class="input-sec col-md-7 col-sm-12">
+          <div class="input-sec col-lg-7 col-md-12">
             <h2 class="input-sec__title">Billing info</h2>
             <p class="input-sec__text">Please enter your billing info</p>
             <p class="input-sec__step">Step 1 of 5</p>
             <form class="input-sec__form" action="https://echo.htmlacademy.ru/" method="post">
               <div class="input-sec__list">
-                <div class="input-sec__des">
-                  <label class="input-sec__label" for="name">First name</label>
-                  <input class="input-sec__inp" type="text" name="name" id="name" placeholder="First name" required>
+                <div class="input-sec__box">
+                  <div class="input-sec__des">
+                    <label class="input-sec__label" for="name">First name</label>
+                    <input class="input-sec__inp" type="text" name="name" id="name" placeholder="First name" required>
+                  </div>
+                  <div class="input-sec__des">
+                    <label class="input-sec__label" for="last-name">Last name</label>
+                    <input class="input-sec__inp" type="text" name="Last name" id="last-name" placeholder="Last name" required>
+                  </div>
                 </div>
-                <div class="input-sec__des">
-                  <label class="input-sec__label" for="last-name">Last name</label>
-                  <input class="input-sec__inp" type="text" name="Last name" id="last-name" placeholder="Last name" required>
+                <div class="input-sec__box">
+                  <div class="input-sec__des">
+                    <label class="input-sec__label" for="email">Email address</label>
+                    <input class="input-sec__inp" type="email" name="email" id="email" placeholder="Email address" required>
+                  </div>
+                  <div class="input-sec__des">
+                    <label class="input-sec__label" for="phone">Phone number</label>
+                    <input class="input-sec__inp" type="text" name="Phone number" id="phone" placeholder="Phone number" required>
+                  </div>
                 </div>
-                <div class="input-sec__des">
-                  <label class="input-sec__label" for="email">Email address</label>
-                  <input class="input-sec__inp" type="email" name="email" id="email" placeholder="Email address" required>
+                <div class="input-sec__box">
+                  <div class="input-sec__des">
+                    <label class="input-sec__label" for="adress">Address</label>
+                    <input class="input-sec__inp" type="text" name="Address" id="adress" placeholder="Address" required>
+                  </div>
+                  <div class="input-sec__des">
+                    <label class="input-sec__label" for="city">Town / City</label>
+                    <input class="input-sec__inp" type="text" name="Town / City" id="city" placeholder="Town / City" required>
+                  </div>
                 </div>
-                <div class="input-sec__des">
-                  <label class="input-sec__label" for="phone">Phone number</label>
-                  <input class="input-sec__inp" type="text" name="Phone number" id="phone" placeholder="Phone number" required>
+                <div class="input-sec__box">
+                  <div class="input-sec__des">
+                    <label class="input-sec__label" for="state">State / Country</label>
+                    <input class="input-sec__inp" type="number" name="state" id="state" placeholder="Choose a state or Country" required>
+                  </div>
+                  <div class="input-sec__des">
+                    <label class="input-sec__label" for="code">ZIP/Postal code</label >
+                    <input class="input-sec__inp" type="text" name="code" id="code" placeholder="ZIP/Postal code" required>
+                  </div>
                 </div>
-                <div class="input-sec__des">
-                  <label class="input-sec__label" for="adress">Address</label>
-                  <input class="input-sec__inp" type="text" name="Address" id="adress" placeholder="Address" required>
-                </div>
-                <div class="input-sec__des">
-                  <label class="input-sec__label" for="city">Town / City</label>
-                  <input class="input-sec__inp" type="text" name="Town / City" id="city" placeholder="Town / City" required>
-                </div>
-                
-                <div class="input-sec__des">
-                  <label class="input-sec__label" for="state">State / Country</label>
-                  <input class="input-sec__inp" type="number" name="state" id="state" placeholder="Choose a state or Country" required>
-                </div>
-                <div class="input-sec__des">
-                  <label class="input-sec__label" for="code">ZIP/Postal code</label >
-                  <input class="input-sec__inp" type="text" name="code" id="code" placeholder="ZIP/Postal code" required>
-                </div> 
+                 
                 <div class="input-sec__checkbox">
                   <input class="input-sec__check " type="checkbox" name="checkbox" id="check" required>
                   <label class="input-sec__check-label" for="check">Ship to a different address?</label>
@@ -343,7 +351,7 @@
                   </div>
                   <div class="pay__texts">
                     <span class="pay__des">+32 USD</span>
-                    <p class="pay__text">Additional price</p>
+                    <p class="pay__text txt">Additional price</p>
                   </div>
                   <img class="pay__img" src="media/img/fedex.png" alt="fedex">
                 </div>
@@ -356,7 +364,7 @@
                   </div>
                   <div class="pay__texts">
                     <span class="pay__des">+16 USD</span>
-                    <p class="pay__text">Additional price</p>
+                    <p class="pay__text txt">Additional price</p>
                   </div>
                   <img class="pay__img" src="media/img/dhl.png" alt="fedex">
                 </div>
@@ -454,7 +462,7 @@
               </div>
             </form>
           </div>
-          <div class="order col-md-5 col-sm-12">
+          <div class="order col-lg-5 col-md-12">
             <h2 class="order__title">Order Summary</h2>
             <p class="order__text">Price can change depending on shipping method and taxes of your state.</p>
             <div class="order__wrapper">

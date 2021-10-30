@@ -26,6 +26,9 @@
     color: #A9A9A9;
 
   }
+  &__form {
+    width: 100%;
+  }
   &__description {
     display: flex;
     align-items: center;
@@ -36,9 +39,12 @@
   
   &__list {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
   }
 
+  &__box {
+    display: flex;
+  }
   &__des {
     display: flex;
     flex-direction: column;
@@ -79,8 +85,8 @@
   }
 
   &__check {
-    width: 20px;
-    height: 20px;
+    width: 17px;
+    height: 17px;
 
   }
 
@@ -93,10 +99,57 @@
   }
 }
 
-// @media screen and (max-width: 1190px) {
-//   .shipping {
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//   }
-// }
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 90% !important;
+  }
+  .shipping {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .confirm__btn {
+    width: 100%;
+    text-align: center;
+  }
+  .confirm__wrap {
+    margin: 32px auto 70px auto;
+    text-align: center;
+  }
+  
+  
+}
+@media screen and (max-width:700px) {
+  .input-sec__box {
+    flex-direction: column;
+  }
+  .input-sec__des:nth-child(odd) {
+    margin-right: 0;
+  }
+  .input-sec__inp {
+    width: 100%;
+  }
+}
+@media screen and (max-width:500px) {
+  .order__wrapper {
+    flex-direction: column;
+  }
+  .order__about {
+    margin-left: 0px !important;
+  }
+  .order__button {
+    width: 100px;
+  }
+  .order {
+    height: auto !important;
+
+    &__inp {
+      width: 185px !important;
+    }
+  }
+  .order__total-price {
+    font-size: 17px !important;
+  }
+
+
+}
