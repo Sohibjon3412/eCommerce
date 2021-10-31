@@ -1,0 +1,88 @@
+.blogg {
+
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+    @include list-unstyled;
+  }
+
+  &__item {
+    margin-bottom: 32px;
+  }
+
+  &__detail {
+    width: 45px;
+    display: inline-block !important;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: $color-primary;
+    background-color: $color-bg;
+    padding: 2px 10px;
+    border-radius: 12px;
+    margin-top: 24px;
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: $text-color;
+  }
+
+  &__txt {
+    font-family: $font-opensans;
+    font-size: 12px;
+    line-height: 16px;
+    color: $text-color;
+  }
+}
+
+.blog__list {
+  display: flex;
+  justify-content: space-between;
+}
+.blogg__about {
+  margin-right: 0 !important;
+  margin: 10px !important;
+}
+.light {
+  color: #A9A9A9;
+}
+.blogg__menu {
+  margin-top: 48px;
+}
+.blogg__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: $text-color;
+  margin-top: 48px;
+}
+.blogg__text {
+  font-family: $font-opensans;
+  font-size: 14px;
+  line-height: 19px;
+  color: #A9A9A9;
+  margin-bottom: 24px;
+}
+.blogg__des {
+  display: flex;
+  margin-top: 80px;
+}
+
+@media screen and (max-width:1023px ) {
+  .blog__list {
+    flex-direction: column;
+  }
+  .blogg__des {
+    flex-direction: column;
+  }
+  .blogg__list {
+    margin-top: 30px;
+  }
+  .blogg__item {
+    display: flex;
+    flex-direction:column;
+  }
+}
